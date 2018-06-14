@@ -1,3 +1,4 @@
+// MENU POUR MOBILE
 var MenuBtn = document.querySelector('#mobile-menu');
 var MenuState = false;
 
@@ -12,14 +13,3 @@ function ToggleMenu(){
         MenuState = false;
     }
 }
-
-// Scroll to Top
-
-var timeOut;
-  function scrollToTop(){
-    if(document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
-      window.scrollBy(0,-50);
-      timeOut=setTimeout('scrollToTop()', 10);
-    }
-    else clearTimeout(timeOut)
-  }
